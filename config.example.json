@@ -1,0 +1,43 @@
+{
+  "_说明": "把 course_url 换成你要刷的课程地址即可。也可以跑 python setup.py 自动抓取。",
+
+  "course_url": "https://mooc1.chaoxing.com/mooc-ans/mycourse/studentstudy?chapterId=〔章节ID〕&courseId=〔课程ID〕&clazzid=〔班级ID〕&enc=〔签名〕",
+
+  "playback_rate": 2.0,
+  "muted": true,
+
+  "chapter_gap_sec": [3, 8],
+  "mouse_noise_sec": [2, 5],
+  "keepalive_interval_sec": [8, 15],
+
+  "daily_max_minutes": 480,
+  "max_chapters_per_run": 80,
+
+  "video_only": true,
+  "minimize_on_start": false,
+
+  "job_verify_timeout_sec": 90,
+  "job_retry_max": 3,
+
+  "force_from_start": true,
+  "restart_threshold_sec": 10,
+
+  "safety": {
+    "detect_anomaly_text": [
+      "异常",
+      "作废",
+      "任务点已过期",
+      "验证码",
+      "人脸识别",
+      "请重新登录",
+      "enc校验失败",
+      "校验失败"
+    ],
+    "stop_on_anomaly": true,
+    "stop_on_quiz": true,
+    "min_video_progress_ratio": 0.995
+  },
+
+  "headless": false,
+  "slow_mo_ms": 0
+}
